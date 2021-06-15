@@ -27,9 +27,16 @@ install.packages("devtools")
 devtools::install_github("joundso/requirements", ref = "development")
 ```
 
+## You can improve :bulb:
+
+- Missing some functionalities?
+- Found a Bug?
+
+--> Feel free to create an [issue](https://github.com/joundso/requirements/issues) or (even better) a [pull request](https://github.com/joundso/requirements/pulls). :pray: Thanks in advance!
+
 ## Basic functions
 
-### Install packages providing a single string
+### Install some packages providing a single string
 
 ```r
 ## Test it with a string:
@@ -43,7 +50,7 @@ miracum/misc-dizutils@development
 requiRements::install(packages = demo_string)
 ```
 
-### Install packages providing a string vector
+### Install some packages providing a string vector
 
 ```r
 ## Test it with a vector:
@@ -59,7 +66,7 @@ demo_vec <-
 requiRements::install(packages = demo_vec)
 ```
 
-### Install packages providing a file containing the packagenames
+### Install some packages providing a file containing the packagenames
 
 ```r
 ## Test it with a file:
@@ -67,7 +74,7 @@ demo_path <- "./data-raw/requirements.txt"
 requiRements::install(path_to_requirements = demo_path)
 ```
 
-### Install packages with a string AND a file
+### Install some packages with a string AND a file
 
 :bulb: Using the above defined variables `demo_string`, `demo_vec` and `demo_path`:
 
@@ -93,3 +100,4 @@ requiRements::install(packages = demo_vec,
 
 - About MIRACUM: <https://www.miracum.org/>
 - About the Medical Informatics Initiative: <https://www.medizininformatik-initiative.de/index.php/de>
+- Alternative solution: Package [`Require`](https://github.com/PredictiveEcology/Require)
