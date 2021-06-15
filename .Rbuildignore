@@ -1,0 +1,14 @@
+^data-raw$
+^LICENSE\.md$
+^\.gitlab-ci\.yml$
+^\.vscode$
+^\.lintr$
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.spelling$
+^\.ccache$
+^\.github$
+^tic\.R$
+^CRAN-RELEASE$
+^cran-comments\.md$
+^logfile\.log$
