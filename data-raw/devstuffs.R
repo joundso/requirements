@@ -66,8 +66,8 @@ my_desc$set("BugReports",
 my_desc$set("License", "GPL-3")
 
 # System requirements (for CRAN to avoid Rpostgres-errors):
-my_desc$set("SystemRequirements",
-            "libpq >= 9.0: libpq-dev (deb) or postgresql-devel (rpm)")
+# my_desc$set("SystemRequirements",
+#             "libpq >= 9.0: libpq-dev (deb) or postgresql-devel (rpm)")
 
 # Save everyting
 my_desc$write(file = "DESCRIPTION")
