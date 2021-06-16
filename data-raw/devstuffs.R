@@ -43,7 +43,7 @@ my_desc$set(
     "Helper function to install packages for R",
     " using an external `requirements.txt` or a",
     " string containing diverse packages from",
-    " several ressources like GitHub or CRAN."
+    " several resources like Github or CRAN."
   )
 )
 
