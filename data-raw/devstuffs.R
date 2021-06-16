@@ -32,7 +32,7 @@ my_desc$del("Maintainer")
 my_desc$del("LazyData")
 
 # Set the version
-my_desc$set_version("0.0.0.9001")
+my_desc$set_version("0.0.0.9002")
 
 # The title of your package
 my_desc$set(Title = "Helper package to install packages for R")
@@ -92,14 +92,15 @@ my_desc$write(file = "DESCRIPTION")
 usethis::use_package("R", min_version = "4.1.0", type = "Depends")
 
 ## Imports
-# usethis::use_package("DIZutils", type = "Imports")
+usethis::use_package("utils", type = "Imports")
+usethis::use_package("remotes", type = "Imports")
 # usethis::use_package("httr", type = "Imports")
 # usethis::use_package("jsonlite", type = "Imports")
 # usethis::use_package("rapportools", type = "Imports")
 
-## Suggests
-# usethis::use_package("testthat", type = "Suggests")
-# usethis::use_package("lintr", type = "Suggests")
+# Suggests
+usethis::use_package("testthat", type = "Suggests")
+usethis::use_package("lintr", type = "Suggests")
 
 
 ## buildignore

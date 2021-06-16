@@ -53,8 +53,8 @@ install <- function(packages = NULL,
 
   ## Make sure the remotes package is installed,
   ## which is needed to install all other packages:
-  if (!"remotes" %in% rownames(installed.packages())) {
-    install.packages("remotes")
+  if (!"remotes" %in% rownames(utils::installed.packages())) {
+    utils::install.packages("remotes")
   }
 
   ## And install all of them:

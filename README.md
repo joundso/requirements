@@ -89,7 +89,7 @@ requiRements::install(packages = demo_vec,
 |            GitHub            |   `user/repo-name`   |  `requiRements::install(packages = "joundso/mainzelliste-connector")`   |
 | GitHub with Branch/Reference | `user/repo-name@ref` | `requiRements::install(packages = "miracum/misc-dizutils@development")` |
 
-## You can improve :bulb:
+## :bulb: You can improve this package
 
 - Missing some functionalities?
 - Found a Bug?
