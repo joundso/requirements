@@ -14,7 +14,7 @@ Authors@R:
              role = "cph"))
 Description: Helper function to install packages for R using an external
     `requirements.txt` or a string containing diverse packages from
-    several ressources like GitHub or CRAN.
+    several resources like Github or CRAN.
 License: GPL-3
 URL: https://github.com/joundso/requirements
 BugReports: https://github.com/joundso/requirements/issues
@@ -28,4 +28,3 @@ Suggests:
     testthat
 Encoding: UTF-8
 Language: en-US
-RoxygenNote: 7.1.1
