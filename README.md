@@ -27,13 +27,6 @@ install.packages("devtools")
 devtools::install_github("joundso/requirements", ref = "development")
 ```
 
-## You can improve :bulb:
-
-- Missing some functionalities?
-- Found a Bug?
-
---> Feel free to create an [issue](https://github.com/joundso/requirements/issues) or (even better) a [pull request](https://github.com/joundso/requirements/pulls). :pray: Thanks in advance!
-
 ## Basic functions
 
 ### Install some packages providing a single string
@@ -95,6 +88,13 @@ requiRements::install(packages = demo_vec,
 |             CRAN             |    `packagename`     |            `requiRements::install(packages = "data.table")`             |
 |            GitHub            |   `user/repo-name`   |  `requiRements::install(packages = "joundso/mainzelliste-connector")`   |
 | GitHub with Branch/Reference | `user/repo-name@ref` | `requiRements::install(packages = "miracum/misc-dizutils@development")` |
+
+## You can improve :bulb:
+
+- Missing some functionalities?
+- Found a Bug?
+
+--> Feel free to create an [issue](https://github.com/joundso/requirements/issues) or (even better) a [pull request](https://github.com/joundso/requirements/pulls). :pray: Thanks in advance!
 
 ## More Infos
 
