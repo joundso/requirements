@@ -35,7 +35,7 @@ my_desc$del("LazyData")
 my_desc$set_version("0.0.1")
 
 # The title of your package
-my_desc$set(Title = "Helper package to install packages for R")
+my_desc$set(Title = "Helper Package to Install Packages for R")
 
 # The description of your package
 my_desc$set(

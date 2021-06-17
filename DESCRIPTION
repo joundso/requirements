@@ -1,7 +1,7 @@
 Package: requiRements
-Title: Helper package to install packages for R
+Title: Helper Package to Install Packages for R
 Version: 0.0.1
-Date: 2021-06-16
+Date: 2021-06-17
 Authors@R: 
     c(person(given = "Jonathan M.",
              family = "Mang",
