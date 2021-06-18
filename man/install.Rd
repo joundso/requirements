@@ -20,3 +20,40 @@ and type ending) to a text file containing all the packages to install.}
 \description{
 Install the packages provided to this function
 }
+\examples{
+\dontrun{
+ ## Test it with a string:
+ demo_string <- "
+ DIZutils
+ data.table
+ joundso/mainzelliste-connector
+ miracum/misc-dizutils@development
+ # this_one_will_be_ignored
+ "
+ requiRements::install(packages = demo_string)
+
+ ## Test it with a vector:
+ demo_vec <-
+   c(
+     "",
+     "DIZutils",
+     "data.table",
+     "joundso/mainzelliste-connector",
+     "miracum/misc-dizutils@development",
+     "# this_one_will_be_ignored"
+   )
+ requiRements::install(packages = demo_vec)
+
+ ## Test it with a file:
+ demo_path <- "./data-raw/requirements.txt"
+ requiRements::install(path_to_requirements = demo_path)
+
+ ## Test it with a string AND a file:
+ requiRements::install(packages = demo_string,
+                       path_to_requirements = demo_path)
+
+ ## Test it with a vector AND a file:
+ requiRements::install(packages = demo_vec,
+                       path_to_requirements = demo_path)
+}
+}

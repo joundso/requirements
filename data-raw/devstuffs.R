@@ -41,7 +41,7 @@ my_desc$set(Title = "Helper Package to Install Packages for R")
 my_desc$set(
   Description = paste0(
     "Helper function to install packages for R",
-    " using an external `requirements.txt` or a",
+    " using an external 'requirements.txt' or a",
     " string containing diverse packages from",
     " several resources like Github or CRAN."
   )
@@ -92,7 +92,7 @@ my_desc$write(file = "DESCRIPTION")
 usethis::use_package("R", min_version = "4.1.0", type = "Depends")
 
 ## Imports
-usethis::use_package("utils", type = "Imports")
+# usethis::use_package("utils", type = "Imports")
 usethis::use_package("remotes", type = "Imports")
 # usethis::use_package("httr", type = "Imports")
 # usethis::use_package("jsonlite", type = "Imports")

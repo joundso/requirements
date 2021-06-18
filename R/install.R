@@ -23,6 +23,42 @@
 #'
 #' @return (Boolean) `TRUE` if all packages are successfully installed,
 #'  `FALSE` otherwise.
+#'@examples
+#'\dontrun{
+#'  ## Test it with a string:
+#'  demo_string <- "
+#'  DIZutils
+#'  data.table
+#'  joundso/mainzelliste-connector
+#'  miracum/misc-dizutils@development
+#'  # this_one_will_be_ignored
+#'  "
+#'  requiRements::install(packages = demo_string)
+#'
+#'  ## Test it with a vector:
+#'  demo_vec <-
+#'    c(
+#'      "",
+#'      "DIZutils",
+#'      "data.table",
+#'      "joundso/mainzelliste-connector",
+#'      "miracum/misc-dizutils@development",
+#'      "# this_one_will_be_ignored"
+#'    )
+#'  requiRements::install(packages = demo_vec)
+#'
+#'  ## Test it with a file:
+#'  demo_path <- "./data-raw/requirements.txt"
+#'  requiRements::install(path_to_requirements = demo_path)
+#'
+#'  ## Test it with a string AND a file:
+#'  requiRements::install(packages = demo_string,
+#'                        path_to_requirements = demo_path)
+#'
+#'  ## Test it with a vector AND a file:
+#'  requiRements::install(packages = demo_vec,
+#'                        path_to_requirements = demo_path)
+#'}
 #' @export
 #'
 install <- function(packages = NULL,
@@ -50,12 +86,6 @@ install <- function(packages = NULL,
 
   ## Remove duplicates:
   packages <- unique(packages)
-
-  ## Make sure the remotes package is installed,
-  ## which is needed to install all other packages:
-  if (!"remotes" %in% rownames(utils::installed.packages())) {
-    utils::install.packages("remotes")
-  }
 
   ## And install all of them:
   for (package in packages) {
