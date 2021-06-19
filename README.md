@@ -12,13 +12,11 @@ The R package `requiRements` provides utility functions used to access a running
 
 ## Installation
 
-<!---
 You can install `requiRements` directly from CRAN:
 
 ```r
 install.packages("requiRements")
 ```
--->
 
 The development version can be installed using
 
