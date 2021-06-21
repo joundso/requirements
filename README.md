@@ -11,7 +11,7 @@
 The R package `requiRements` provides the ability to install all packages provided in a text or given a raw string.
 This is meant to simply keep all e.g project dependent packages in one file (like [`requirements.txt`](./data-raw/requirements.txt)) and install them all in a rush by using `requiRements::install("./requirements.txt")`.
 
-This is well known from python and now also with R.
+This is well known from python and now available within R.
 
 ## Installation
 
