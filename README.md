@@ -4,7 +4,7 @@
 
 [![codecov](https://codecov.io/gh/joundso/requirements/branch/master/graph/badge.svg)](https://codecov.io/gh/joundso/requirements)
 [![CRAN Status Badge](https://www.r-pkg.org/badges/version-ago/requiRements)](https://cran.r-project.org/package=requiRements)
-<!-- [![Cran Checks](https://cranchecks.info/badges/worst/requiRements)](https://cran.r-project.org/web/checks/check_results_requiRements.html) -->
+[![Cran Checks](https://cranchecks.info/badges/worst/requiRements)](https://cran.r-project.org/web/checks/check_results_requiRements.html)
 
 <!-- badges: end -->
 
