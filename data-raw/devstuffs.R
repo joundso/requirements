@@ -32,7 +32,7 @@ my_desc$del("Maintainer")
 my_desc$del("LazyData")
 
 # Set the version
-my_desc$set_version("0.0.1")
+my_desc$set_version("0.0.2")
 
 # The title of your package
 my_desc$set(Title = "Helper Package to Install Packages for R")
