@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 
-[![codecov](https://codecov.io/gh/joundso/requirements/branch/master/graph/badge.svg)](https://codecov.io/gh/joundso/requirements)
+[![codecov](https://codecov.io/gh/joundso/requirements/branch/master/graph/badge.svg)](https://app.codecov.io/gh/joundso/requirements)
 [![CRAN Status Badge](https://www.r-pkg.org/badges/version-ago/requiRements)](https://cran.r-project.org/package=requiRements)
 [![CRAN Checks](https://badges.cranchecks.info/worst/requiRements.svg)](https://cran.r-project.org/web/checks/check_results_requiRements.html)
 
