@@ -1,5 +1,5 @@
-DIZutils
+DIZtools
 data.table
 joundso/mainzelliste-connector
-miracum/misc-dizutils@development
+miracum/misc-diztools@dev
 # this_one_will_be_ignored

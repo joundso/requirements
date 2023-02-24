@@ -4,7 +4,12 @@
 \alias{install}
 \title{Install the packages provided to this function}
 \usage{
-install(packages = NULL, path_to_requirements = NULL)
+install(
+  packages = NULL,
+  path_to_requirements = NULL,
+  quiet = TRUE,
+  upgrade = "always"
+)
 }
 \arguments{
 \item{packages}{(Optional, String, also as vector)
@@ -12,6 +17,15 @@ The actual packages to install.}
 
 \item{path_to_requirements}{(Optional, String) The path (including filename
 and type ending) to a text file containing all the packages to install.}
+
+\item{quiet}{If \code{TRUE}, suppress output.}
+
+\item{upgrade}{Should package dependencies be upgraded? One of "default", "ask", "always", or "never". "default"
+respects the value of the \code{R_REMOTES_UPGRADE} environment variable if set,
+and falls back to "ask" if unset. "ask" prompts the user for which out of
+date packages to upgrade. For non-interactive sessions "ask" is equivalent
+to "always". \code{TRUE} and \code{FALSE} are also accepted and correspond to
+"always" and "never" respectively.}
 }
 \value{
 (Boolean) `TRUE` if all packages are successfully installed,

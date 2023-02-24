@@ -1,7 +1,7 @@
 Package: requiRements
 Title: Helper Package to Install Packages for R
-Version: 0.0.2
-Date: 2022-12-07
+Version: 0.0.3
+Date: 2023-02-24
 Authors@R: c(
     person("Jonathan M.", "Mang", , "jonathan.mang@uk-erlangen.de", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-0518-4710")),
@@ -23,4 +23,4 @@ Suggests:
     testthat
 Encoding: UTF-8
 Language: en-US
-RoxygenNote: 7.2.2
+RoxygenNote: 7.2.3

@@ -6,10 +6,10 @@ invisible(gc()) # Garbage collector/Clear unused RAM
 ## -- Start to code here
 ## Test it with a string:
 demo_string <- "
-DIZutils
+DIZtools
 data.table
 joundso/mainzelliste-connector
-miracum/misc-dizutils@development
+miracum/misc-diztools@dev
 # this_one_will_be_ignored
 "
 requiRements::install(packages = demo_string)
@@ -18,10 +18,10 @@ requiRements::install(packages = demo_string)
 demo_vec <-
   c(
     "",
-    "DIZutils",
+    "DIZtools",
     "data.table",
     "joundso/mainzelliste-connector",
-    "miracum/misc-dizutils@development",
+    "miracum/misc-diztools@dev",
     "# this_one_will_be_ignored"
   )
 requiRements::install(packages = demo_vec)

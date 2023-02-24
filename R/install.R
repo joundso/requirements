@@ -20,6 +20,7 @@
 #'   The actual packages to install.
 #' @param path_to_requirements (Optional, String) The path (including filename
 #'   and type ending) to a text file containing all the packages to install.
+#' @inheritParams remotes::update_packages
 #'
 #' @return (Boolean) `TRUE` if all packages are successfully installed,
 #'  `FALSE` otherwise.
@@ -62,7 +63,9 @@
 #' @export
 #'
 install <- function(packages = NULL,
-                    path_to_requirements = NULL) {
+                    path_to_requirements = NULL,
+                    quiet = TRUE,
+                    upgrade = "always") {
   packages_file <- ""
   if (!is.null(path_to_requirements)) {
     con <- file(path_to_requirements)
@@ -90,7 +93,7 @@ install <- function(packages = NULL,
   ## And install all of them:
   for (package in packages) {
     cat(paste0(
-      "\n\n## Starting to install '",
+      "\n## Starting to install '",
       package,
       "' with all dependencies:\n"
     ))
@@ -101,18 +104,26 @@ install <- function(packages = NULL,
           gsub(pattern = "^(.*)@",
                replacement = "",
                x = package)
-        remotes::install_github(repo = package, ref = branch)
+        remotes::install_github(
+          repo = package,
+          ref = branch,
+          quiet = quiet,
+          upgrade = upgrade
+        )
       } else {
         ## Install the master/main branch:
-        remotes::install_github(repo = package)
+        remotes::install_github(repo = package,
+                                quiet = quiet,
+                                upgrade = upgrade)
       }
     } else {
       remotes::update_packages(
         packages = package,
         build_manual = FALSE,
-        quiet = TRUE,
-        upgrade = "always"
+        quiet = quiet,
+        upgrade = upgrade
       )
     }
+    cat("\nDone.\n")
   }
 }

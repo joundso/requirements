@@ -32,7 +32,7 @@ my_desc$del("Maintainer")
 my_desc$del("LazyData")
 
 # Set the version
-my_desc$set_version("0.0.2")
+my_desc$set_version("0.0.3")
 
 # The title of your package
 my_desc$set(Title = "Helper Package to Install Packages for R")
@@ -114,6 +114,7 @@ usethis::use_build_ignore("tic.R")
 usethis::use_build_ignore(".github")
 usethis::use_build_ignore("cran-comments.md")
 usethis::use_build_ignore("logfile.log")
+usethis::use_build_ignore("CRAN-SUBMISSION")
 # usethis::use_build_ignore("NEWS.md")
 
 # gitignore
