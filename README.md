@@ -100,5 +100,5 @@ requiRements::install(packages = demo_vec,
 ## More Infos
 
 - About MIRACUM: <https://www.miracum.org/>
-- About the Medical Informatics Initiative: <https://www.medizininformatik-initiative.de/index.php/de>
+- About the Medical Informatics Initiative: <https://www.medizininformatik-initiative.de/de/start>
 - Alternative solution: Package [`Require`](https://github.com/PredictiveEcology/Require)
